@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: aliceblue;
+  }
+.css-10hburv-MuiTypography-root  {
+    font-size: 1.2rem !important;
+}
+.white-bg {
+    background-color: white;
+}
+.main-bg {
+    background: #00a884!important;
+}
+.login-reg-btn {
+    background: #00a884!important;
+    color: white 
+}
+.box-container {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh
+}
+.dashboard-container {
+    display: flex;
+    height: 100vh 
+}
+.chat-container {
+    background: #eef1f7;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-height: 100%;
+    overflow-y: auto;
+    background-image:url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png")
+}
+.chat-selected-user {
+    background: #00a884;
+    color: white;
+    padding: 15px;
+    width: 20%;
+    border-radius: 1.5rem;
+    margin: 1rem 1rem;
+    text-align: center;
+}
+.user-chat {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666
+}
+.chat-message {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto
+}
+.input-container {
+    display: flex;
+    padding: 10px;
+    background: white;
+    border-top: 1px solid #ccc;
+    position: sticky;
+    top: 90%;
+}
+.input-box {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.input-btn {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sidebar-container {
+    background: #fff;
+    width: 13%;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid #ccc;
+    color: #878683;
+}
+@media screen and (max-width: 760px) {
+    .sidebar-container {
+       width: 45%;
+    }
+ }
+.sidebar-list-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #00a884;
+}
+.sidebar-img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%
+}
+
+
