@@ -16,3 +16,6 @@ Chat Application
    2. Logout functionality
    3. Register with different email id and start chatting with any of the user
    4. Chat history will be present even after logout for any of the user.
+4. Firebase integration
+   1. Authentication
+   2. Used Firestore database for storing chat
