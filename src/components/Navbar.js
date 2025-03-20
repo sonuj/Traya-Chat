@@ -24,7 +24,7 @@ const Navbar = () => {
 	}, []);
 
 	return (
-		<AppBar position="static" className="main-bg">
+		<AppBar position="static" className="nav-bg">
 			<Toolbar>
 				<Typography variant="h6" sx={{ flexGrow: 1 }}>
 					{currentUser

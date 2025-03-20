@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: "Roboto", sans-serif;
     background-color: aliceblue;
+    overflow: hidden
   }
 .css-10hburv-MuiTypography-root  {
     font-size: 1.2rem !important;
@@ -9,8 +10,10 @@ body {
 .white-bg {
     background-color: white;
 }
-.main-bg {
+.nav-bg {
     background: #00a884!important;
+    position: fixed;
+ 	z-index: 9999;
 }
 .login-reg-btn {
     background: #00a884!important;
@@ -24,11 +27,13 @@ body {
     height:100vh
 }
 .dashboard-container {
+    position: relative;
     display: flex;
     height: 100vh 
 }
 .chat-container {
     background: #eef1f7;
+    height: 100vh;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -53,17 +58,21 @@ body {
     color: #666
 }
 .chat-message {
+    overflow: scroll;
     flex: 1;
     padding: 20px;
-    overflow-y: auto
+    margin-bottom: 150px;
 }
 .input-container {
     display: flex;
     padding: 10px;
     background: white;
     border-top: 1px solid #ccc;
-    position: sticky;
-    top: 90%;
+    position: fixed;
+    bottom: 0px;
+    width: calc(100% - 271px);
+    top: 94%;
+    height: 40px;
 }
 .input-box {
     flex: 1;
@@ -82,7 +91,7 @@ body {
 }
 .sidebar-container {
     background: #fff;
-    width: 13%;
+    width: 250px;
     height: 100vh;
     overflow-y: auto;
     border-right: 1px solid #ccc;
